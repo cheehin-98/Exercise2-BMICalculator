@@ -30,12 +30,12 @@ class MainActivity : AppCompatActivity() {
     {
         val textWeight: TextView = findViewById(R.id.editTextWeight)
         val textHeight: TextView = findViewById(R.id.editTextHeight)
-        viewBMIPicture  = findViewById(R.id.imageViewProfile)
         totalBMI = findViewById(R.id.textViewBMI)
         textHeight.text = ""
         textWeight.text = ""
         totalBMI.text = "BMI: "
         viewBMIPicture.setImageResource(R.drawable.empty)
+        calculateBMI = 0.0
 
     }
     private fun calculateBMI(): Int {
